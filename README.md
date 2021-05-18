@@ -15,8 +15,9 @@ We don't really need the DC output because the heaters have high inertia, so we 
 My solution (circuit schematic will be added later):
 
 1. Arduino board (nano or mini seems best candidates, because they are small)
-2. N-channel "logic level" MOSFET connected to D9 output pin of Arduino board (can be any of 3, 5, 6, 9, 10, 11, see https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/ )
-3. Resistor divider + zener diode 5.1V to measure battery voltage connected to A0 input (can be any of A0-A5, see https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/)
+2. N-channel "logic level" MOSFET connected to D9 output pin of Arduino board (can be any of 3, 5, 6, 9, 10, 11, see https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/ ). You can also look into my OS hardware project of mosfet switch: https://easyeda.com/ptja.pl/m-sw
+
+4. Resistor divider + zener diode 5.1V to measure battery voltage connected to A0 input (can be any of A0-A5, see https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/)
 
 Total cost of parts is about $5 (when ordered in China).
 
